@@ -1,0 +1,124 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body class="container bg-dark w-100">
+    <div class="text-center display-2 text-light">Diablo 2 Quick Map Reference</div>
+    <strong>
+        <div class="text-success">Green = Progress to next area</div>
+        <div class="text-info">Blue = Optional Quests</div>
+        <div class="text-warning">Yellow = Unique Monsters and Chests</div>
+        <div class="text-danger">Red = Waypoints</div>
+        <div class="text-light">All directions from the Act drop downs are from the entrance tile, not waypoint</div>
+    </strong>
+    <div class="accordion" id="accordionMainContent">
+        <div class="accordion-item bg-dark text-light">
+            <h2 class="accordian-header" id="accordionActOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <strong>ACT I</strong>
+                </button>
+            </h2>
+
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionMainContent">
+                <div class="accordion-body">
+                    <ul class="list">
+                        <strong>
+                            <li class="text-success">Blood Moore to Cold Planes - Follow Road</li>
+                            <li class="text-info">Cold Planes to Burial Grounds - One of three far corners</li>
+                            <li class="text-warning">Crypt to Bonebreaker & Gold Chest - Left</li>
+                            <li class="text-success">Cold Planes to Stoney Field - Near center of an edge</li>
+                            <li class="text-info">Stoney Field to Stone Circle - Near Road</li>
+                            <li class="text-success">Stoney Field to Underground Passage - On border or randomly inside
+                            </li>
+                            <li class="text-warning">Underground Passage 1 to Underground Passage 2 - Left</li>
+                            <li class="text-success">Underground Passage 1 to Dark Woods - Straight</li>
+
+                            <li>
+                                <button id="btnAttrNameID" class="btn-primary w-100" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#cavesCollapseID" aria-expanded="false"
+                                    aria-controls="cavesCollapseID">
+                                    <u><strong>Underground Passage - Starting Tiles</strong></u>
+                                    <img class="text-right" src="plus-circle.svg" class="" width="15" height="15">
+                                </button>
+                                <div class="collapse" id="cavesCollapseID">
+                                    <div class="row">
+                                        <img class="mapTypeCave col-12 col-md-6 col-lg-4" src="images/caveEpre1.PNG">
+                                        <img class="mapTypeCave col-12 col-md-6 col-lg-4" src="images/caveEpre2.PNG">
+                                        <img class="mapTypeCave col-12 col-md-6 col-lg-4" src="images/caveNpre1.PNG">
+                                        <img class="mapTypeCave col-12 col-md-6 col-lg-4" src="images/caveNpre2.PNG">
+                                        <img class="mapTypeCave col-12 col-md-6 col-lg-4" src="images/caveSpre1.PNG">
+                                        <img class="mapTypeCave col-12 col-md-6 col-lg-4" src="images/caveSpre2.PNG">
+                                        <img class="mapTypeCave col-12 col-md-6 col-lg-4" src="images/caveWpre1.PNG">
+                                        <img class="mapTypeCave col-12 col-md-6 col-lg-4" src="images/caveWpre2.PNG">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="text-success">Dark Woods to Black Marsh - Follow Road</li>
+                            <li class="text-success">Black Marsh to Tamoe Highlands - Any Edge Except Bottom Left</li>
+                            <li class="text-success">Tamoe Highlands to Outer Cloister - Top Right</li>
+                            <li class="text-info">Barracks to Malus - Left or Straight</li>
+                            <li class="text-success">Barracks to Jail Level 1 - Left or Straight</li>
+                            <li class="text-danger">Jail Level 1 to Waypoint - Left</li>
+                            <li class="text-success">Jail Level 1 to Jail Level 2 - Straight</li>
+                            <li class="text-warning">Jail Level 2 to Pitspawn Fouldog - Left</li>
+                            <li class="text-success">Jail Level 2 to Jail Level 3 - Straight</li>
+                            <li class="text-success">Jail Level 3 to Inner Cloister - Left</li>
+                            <li class="text-success">Catacombs Level 2 Waypoint to Catacombs Level 3 - Right</li>
+                        </strong>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item bg-dark text-light">
+            <h2 class="accordian-header" id="accordionActTwo">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <strong>ACT II</strong>
+                </button>
+            </h2>
+
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionMainContent">
+                <div class="accordion-body">
+                    <ul class="list">
+                        <strong>
+                            <li class="text-info">Town to Sewers Level 1 - Bottom Entrance recommended?</li>
+                            <li class="text-danger">Sewers Level 2 to Waypoint - Left</li>
+                            <li class="text-info">Sewers Level 2 to Sewers Level 3 - Straight</li>
+                            <li class="text-info">Sewers Level 3 to Radamant - Left</li>
+                            <li class="text-success">Rocky Waste to Dry Hills - Corner (Possibly next to town entrance!)</li>
+                            <li class="text-success">Halls of the Dead Level 1 to Level 2 - Left</li>
+                            <li class="text-success">Halls of the Dead Level 2 to Level 3 - Left</li>
+                            <li class="text-danger">Halls of the Dead Level 2 to Waypoint - Straight</li>
+                            <li class="text-success">Halls of the Dead Level 3 to Golden Chest (Cube) - Left</li>
+
+
+
+
+
+
+                        </strong>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
