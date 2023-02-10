@@ -11,25 +11,23 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script type="module" src="app.js"></script>
-    <title>Document</title>
+    <title>Diablo 2 Map Reference and Utils Home</title>
 </head>
 
 <body class="container bg-dark w-100">
     <div class="text-center display-4 text-light pb-3">Diablo 2 Quick Map Reference</div>
 
-
-
     <div class="accordion pb-2" id="accordionBossContent">
 
         <div class="accordion-item bg-dark text-light">
-            <h2 class="accordian-header" id="accordionActOne">
+            <h2 class="accordian-header" id="accordionBoss">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseBoss" aria-expanded="true" aria-controls="collapseBoss">
                     <strong>Common Bosses & Areas</strong>
                 </button>
             </h2>
             <div id="collapseBoss" class="accordion-collapse collapse" aria-labelledby="headingBoss"
-                data-bs-parent="#accordionMainContent">
+                data-bs-parent="#accordionBossContent">
                 <div class="accordion-body">
                     <ul class="list">
                         <strong>
@@ -76,22 +74,19 @@
         </div>
     </div>
 
-
-
-
     <div class="card text-white bg-dark border-secondary mb-3" style="max-width: 60rem;">
         <div class="card-header  border-secondary">Show / Hide</div>
         <div class="card-body">
-            <button type="button" class="btn btn-light" id="btnNextArea">Next Area</button>
-            <button type="button" class="btn btn-info" id="btnOptionalQuest">Optional Quests</button>
-            <button type="button" class="btn btn-warning" id="btnUniquePackChest">Unique Packs / Chests</button>
-            <button type="button" class="btn btn-danger" id="btnWaypoint">Waypoints</button>
+            <button type="button" class="btn btn-light bg-gradient" id="btnNextArea">Next Area</button>
+            <button type="button" class="btn btn-info bg-gradient" id="btnOptionalQuest">Optional Quests</button>
+            <button type="button" class="btn btn-warning bg-gradient" id="btnUniquePackChest">Unique Packs / Chests</button>
+            <button type="button" class="btn btn-danger bg-gradient" id="btnWaypoint">Waypoints</button>
         </div>
     </div>
 
     <div class="accordion" id="accordionMainContent">
         <div class="accordion-item bg-dark text-light">
-            <h2 class="accordian-header" id="accordionActOne">
+            <h2 class="accordian-header" id="accordionMainContent">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     <strong>ACT I</strong>
@@ -104,10 +99,13 @@
                         <strong>
                             <li class="text-info optionalQuestListItem">Blood Moor to Den of Evil - Follow Road</li>
                             <li class="nextAreaListItem">Blood Moor to Cold Planes - Follow Road</li>
-                            <li class="text-info  optionalQuestListItem">Cold Planes to Burial Grounds - Follow Road & Corner</li>
-                            <li class="text-warning uniquePackChestListItem">Crypt to Bonebreaker & Gold Chest - Left</li>
+                            <li class="text-info  optionalQuestListItem">Cold Planes to Burial Grounds - Follow Road &
+                                Corner</li>
+                            <li class="text-warning uniquePackChestListItem">Crypt to Bonebreaker & Gold Chest - Left
+                            </li>
                             <li class="text-warning uniquePackChestListItem">Mausoleum to Golden Chest - Left</li>
-                            <li class="text-warning uniquePackChestListItem">Cold Planes to Cave Level 1 - Follow Road</li>
+                            <li class="text-warning uniquePackChestListItem">Cold Planes to Cave Level 1 - Follow Road
+                            </li>
                             <li class="nextAreaListItem">Cold Planes to Stony Field - Follow Road & Near center of an
                                 edge
                                 and away from Burial Grounds</li>
@@ -115,7 +113,8 @@
                             <li class="nextAreaListItem">Stony Field to Underground Passage - Follow Road & On border or
                                 randomly inside
                             </li>
-                            <li class="text-warning uniquePackChestListItem">Underground Passage 1 to Underground Passage 2 - Left</li>
+                            <li class="text-warning uniquePackChestListItem">Underground Passage 1 to Underground
+                                Passage 2 - Left</li>
                             <li class="nextAreaListItem">Underground Passage 1 to Dark Woods - Straight</li>
                             <li>
                                 <button id="btnAttrNameID" class="btn-primary w-100" type="button"
@@ -138,21 +137,26 @@
                                 </div>
                             </li>
                             <li class="nextAreaListItem">Dark Woods to Black Marsh - Follow Road</li>
-                            <li class="text-warning uniquePackChestListItem">Black Marsh to Hole Level 1 - Follow Road (unless river spawns on
+                            <li class="text-warning uniquePackChestListItem">Black Marsh to Hole Level 1 - Follow Road
+                                (unless river spawns on
                                 map?)</li>
                             <li class="text-warning uniquePackChestListItem">Hole Level 1 to Hole Level 2 - Left</li>
-                            <li class="text-info  optionalQuestListItem">Forgotten Tower Levels 1-4 to Next Level - Left</li>
-                            <li class="text-warning uniquePackChestListItem">Black Marsh to Hole Level 1 - Follow Road</li>
+                            <li class="text-info  optionalQuestListItem">Forgotten Tower Levels 1-4 to Next Level - Left
+                            </li>
+                            <li class="text-warning uniquePackChestListItem">Black Marsh to Hole Level 1 - Follow Road
+                            </li>
                             <li class="nextAreaListItem">Black Marsh to Tamoe Highlands - Follow Road & Any Edge Except
                                 Bottom Left</li>
-                            <li class="text-warning uniquePackChestListItem">Tamoe Highlands to Pit Level 1 - Follow Road</li>
+                            <li class="text-warning uniquePackChestListItem">Tamoe Highlands to Pit Level 1 - Follow
+                                Road</li>
                             <li class="nextAreaListItem">Tamoe Highlands to Outer Cloister - Follow Road & Top Right
                             </li>
                             <li class="text-info  optionalQuestListItem">Barracks to Malus - Left or Straight</li>
                             <li class="nextAreaListItem">Barracks to Jail Level 1 - Left or Straight</li>
                             <li class="text-danger waypointListItem">Jail Level 1 to Waypoint - Left</li>
                             <li class="nextAreaListItem">Jail Level 1 to Jail Level 2 - Straight</li>
-                            <li class="text-warning uniquePackChestListItem">Jail Level 2 to Pitspawn Fouldog - Left</li>
+                            <li class="text-warning uniquePackChestListItem">Jail Level 2 to Pitspawn Fouldog - Left
+                            </li>
                             <li class="nextAreaListItem">Jail Level 2 to Jail Level 3 - Straight</li>
                             <li class="nextAreaListItem">Jail Level 3 to Inner Cloister - Left</li>
                             <li class="nextAreaListItem">Catacombs Level 2 Waypoint to Catacombs Level 3 - Right</li>
@@ -173,23 +177,29 @@
                 <div class="accordion-body">
                     <ul class="list">
                         <strong>
-                            <li class="text-info  optionalQuestListItem">Town to Sewers Level 1 - Bottom Entrance Recommended?</li>
+                            <li class="text-info  optionalQuestListItem">Town to Sewers Level 1 - Bottom Entrance
+                                Recommended?</li>
                             <li class="text-danger waypointListItem">Sewers Level 2 to Waypoint - Left</li>
                             <li class="text-info">Sewers Level 2 to Sewers Level 3 - Straight</li>
                             <li class="text-info">Sewers Level 3 to Radamant - Left</li>
-                            <li class="text-warning uniquePackChestListItem">Stony Tomb Level 1 to Stony Tomb Level 2 - Left</li>
-                            <li class="text-warning uniquePackChestListItem">Stony Tomb Level 2 to Golden Chest - Left</li>
-                            <li class="text-warning uniquePackChestListItem">Stony Tomb Level 2 to Creeping Feature - Straight</li>
+                            <li class="text-warning uniquePackChestListItem">Stony Tomb Level 1 to Stony Tomb Level 2 -
+                                Left</li>
+                            <li class="text-warning uniquePackChestListItem">Stony Tomb Level 2 to Golden Chest - Left
+                            </li>
+                            <li class="text-warning uniquePackChestListItem">Stony Tomb Level 2 to Creeping Feature -
+                                Straight</li>
                             <li class="nextAreaListItem">Rocky Waste to Dry Hills - Random Corner (Possibly next to
                                 town)
                             </li>
                             <li class="nextAreaListItem">Halls of the Dead Level 1 to Level 2 - Left</li>
-                            <li class="text-danger waypointListItem">Halls of the Dead Level 2 to Waypoint - Straight</li>
+                            <li class="text-danger waypointListItem">Halls of the Dead Level 2 to Waypoint - Straight
+                            </li>
                             <li class="nextAreaListItem">Halls of the Dead Level 2 Waypoint to Level 3 - Right</li>
 
                             <li class="nextAreaListItem">Halls of the Dead Level 2 to Level 3 - Left</li>
                             <li class="nextAreaListItem">Halls of the Dead Level 3 to Golden Chest (Cube) - Left</li>
-                            <li class="text-warning uniquePackChestListItem">Dry Hills to Rocky Waste - Random Corner</li>
+                            <li class="text-warning uniquePackChestListItem">Dry Hills to Rocky Waste - Random Corner
+                            </li>
 
                             <li class="nextAreaListItem">Dry Hills to Far Oasis - Corner</li>
                             <li class="nextAreaListItem">Maggot Lair Level 1 to Maggot Lair Level 2 - Right</li>
@@ -199,7 +209,8 @@
                             <li class="text-warning uniquePackChestListItem">Ancient Tunnels to Golden Chest - Left</li>
                             <li class="nextAreaListItem">Lost City to Valley of the Snakes - Corner N/E/W (Not S)</li>
                             <li class="nextAreaListItem">Claw Viper Temple Level 1 to Level 2 - Left</li>
-                            <li class="text-warning uniquePackChestListItem">Tal Rasha's Tomb (incorrect) to Golden Chest / Unique Pack - Left
+                            <li class="text-warning uniquePackChestListItem">Tal Rasha's Tomb (incorrect) to Golden
+                                Chest / Unique Pack - Left
                             </li>
                             <li><img src="images/durielMap.png"></li>
                             <li class="nextAreaListItem">Tal Rasha's Tomb (correct) to Duriel - Left</li>
@@ -226,8 +237,10 @@
                             <li class="nextAreaListItem">Great Marsh camps may lead to Spider Forest or Flayer Jungle
                             </li>
                             <li>The River connects all 3 areas, follow the river if you get lost</li>
-                            <li class="text-warning uniquePackChestListItem">Spawmpy Pits Level 1 to Swampy Pits Level 2 - Left</li>
-                            <li class="text-warning uniquePackChestListItem">Spawmpy Pits Level 2 to Swampy Pits Level 3 - Left</li>
+                            <li class="text-warning uniquePackChestListItem">Spawmpy Pits Level 1 to Swampy Pits Level 2
+                                - Left</li>
+                            <li class="text-warning uniquePackChestListItem">Spawmpy Pits Level 2 to Swampy Pits Level 3
+                                - Left</li>
                             <li class="nextAreaListItem">Flayer Dungeon Level 1 to Flayer Dungeon Level 2 - Left</li>
                             <li class="nextAreaListItem">Flayer Dungeon Level 2 to Flayer Dungeon Level 3 - Left</li>
                             <li>
@@ -325,8 +338,10 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="text-warning uniquePackChestListItem">Glacial Trail to Drifter Cavern - Straight</li>
-                            <li class="text-warning uniquePackChestListItem">Glacial Trail to Golden Chest & Bonesaw Breaker - Right</li>
+                            <li class="text-warning uniquePackChestListItem">Glacial Trail to Drifter Cavern - Straight
+                            </li>
+                            <li class="text-warning uniquePackChestListItem">Glacial Trail to Golden Chest & Bonesaw
+                                Breaker - Right</li>
                             <li class="nextAreaListItem">Glacial Trail to Frozen Tundra - Left</li>
                             <li class="nextAreaListItem">Frozen Tundra to Ancients Way - North-West or North-East</li>
                             <li class="text-info">Ancients Way to Icy Cellar - Straight</li>
@@ -341,16 +356,13 @@
                 </div>
             </div>
         </div>
+
+
+
+
+
     </div>
-    <footer>
-        <div class="text-light ">Credit for most images goes to Indrek <a
-                href="https://www.speedrun.com/d2lod/guide/dadr3">here</a></div>
-        <div class="text-light ">Most directions sourced from Maxroll.gg <a
-                href="https://maxroll.gg/d2/resources/map-reading">here</a></div>
-        <div class="text-light ">Nithilak layout guide by SlightRedeye <a
-                href="https://www.reddit.com/r/pathofdiablo/comments/6bo1sv/nithilak_layout_guide_for_new_and_returning/">here</a>
-        </div>
-    </footer>
 </body>
+<a href="/sources.html" class="link-primary">Sources</a>
 
 </html>

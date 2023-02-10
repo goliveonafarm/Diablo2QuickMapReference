@@ -1,3 +1,8 @@
+import Quest from './Quest.js'
+import Player from './Player.js'
+
+let playerList = [];
+
 let nextAreaListItems = document.getElementsByClassName("nextAreaListItem");
 let optionalQuestListItems = document.getElementsByClassName("optionalQuestListItem");
 let uniquePackChestListItems = document.getElementsByClassName("uniquePackChestListItem");
@@ -20,6 +25,11 @@ function toggleDirections(btnClassActive, btnClassInactive, listItems, e) {
     }
 }
 
+function checkSavedPlayers(){
+    //if(local playerList)  playerList = local playerList
+    //
+}
+
 document.getElementById("btnNextArea").addEventListener("click", (e) =>
     toggleDirections("btn-light", "btn-outline-light", nextAreaListItems, e)
 );
@@ -32,3 +42,9 @@ document.getElementById("btnUniquePackChest").addEventListener("click", (e) =>
 document.getElementById("btnWaypoint").addEventListener("click", (e) =>
     toggleDirections("btn-danger", "btn-outline-danger", waypointListItems, e)
 );
+
+console.log(Quest.quests)
+console.log(Player)
+
+const PlayerOne = new Player('test character', Quest.quests );
+console.log(PlayerOne)
